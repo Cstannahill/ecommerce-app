@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import CartDrawer from "@/components/cart/CartDrawer";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
+import storeLogo from "@/public/resources/shadystore.png";
 
 type Props = { categories: string[] };
 
@@ -15,7 +17,14 @@ export default function NavbarClient({ categories }: Props) {
     <header className="border-b bg-background">
       <nav className="container mx-auto flex items-center justify-between py-4 px-6">
         <Link href="/" className="text-2xl font-bold">
-          CTAN
+          <Image
+            src="/shadystore.png"
+            alt="Logo"
+            width={40}
+            height={40}
+            className="inline-block mr-2 rounded-2xl"
+          />
+          ShadyT's Digital Emporium
         </Link>
 
         <ul className="hidden md:flex gap-8">

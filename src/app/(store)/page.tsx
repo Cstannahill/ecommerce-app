@@ -27,12 +27,13 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero / Landing section */}
-      <section className="mb-12 rounded-lg bg-gradient-to-r from-indigo-600 to-pink-500 p-12 text-center text-white">
-        <h1 className="text-4xl font-extrabold mb-4">Welcome to My Store</h1>
+      <section className="mb-12 rounded-lg bg-gradient-to-r from-zinc-900 via-zinc-700 to-neutral-900 p-12 text-center text-white">
+        <h1 className="text-4xl font-extrabold mb-4">
+          Welcome to ShadyT's Digital Emporium
+        </h1>
         <p className="max-w-2xl mx-auto mb-6">
-          Discover unique digital assets and handcrafted physical goods—all
-          powered by Stripe. Browse our categories or dive straight into our
-          offerings.
+          Discover unique digital assets and handcrafted physical goods. Browse
+          our categories or dive straight into our offerings.
         </p>
         <div className="flex justify-center gap-4">
           <Link href="/categories/digital">
